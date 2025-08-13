@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: render-vless
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: UUID
+        value: 2b92b421-067b-4e03-98a1-3fefb8a7a4e1
+      - key: WS_PATH
+        value: /ws
+      - key: PORT
+        value: 443
